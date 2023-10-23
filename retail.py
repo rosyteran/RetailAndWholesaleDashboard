@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # Function to display the retail dashboard
 def display_retail_dashboard(col2, col3, col4):
 
-    retail_complete = pd.read_csv('retailCompleteData.csv')
+    retail_complete = pd.read_csv('retailnew.csv')
 
     retail_complete['Date'] = pd.to_datetime(retail_complete['Created at'], utc=True).dt.date
     retail_complete['Month-Year'] = pd.to_datetime(retail_complete['Date']).dt.strftime('%B-%Y')
