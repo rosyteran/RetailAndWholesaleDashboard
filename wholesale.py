@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 def display_wholesale_dashboard(col2, col3, col4):
     # Dropdowns and input for the Wholesale Analysis
 
-    df_wholesale = pd.read_csv('wholesale_final.csv')
+    df_wholesale = pd.read_csv('wholesale_new.csv')
 
     df_wholesale['Date'] = pd.to_datetime(df_wholesale['created_at'], utc=True).dt.date
     df_wholesale['Month-Year'] = pd.to_datetime(df_wholesale['Date']).dt.strftime('%B-%Y')
